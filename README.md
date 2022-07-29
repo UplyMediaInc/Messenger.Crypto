@@ -7,12 +7,8 @@ Chat Dapp on IPFS.
 
 
 ## Stake.sol
-Users can stake their tokens. In return shares will earn Liquidity Provider Tokens (LP Tokens) Tokens.
-
-People swap their tokens to CHATr. In first steps just ETH <=> CHATR
+Users can stake for 1 - 7 - 30 days. In return they earn % of their stakes. 
 
 ## NFT-Trade.sol
-Users can show their NFT's in the chat. People can OFFER these NFTs in live.
+Users can show their NFT's in the chat. People can OFFER these NFTs in live. If holder accept the offer, NFT will be sent to the user who offer the NFT from NFT holder.
 
-
-### Details and wireframes in the presentation msg-crypto-work-flow.pptx
