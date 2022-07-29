@@ -37,10 +37,10 @@ contract Stake {
 
     /*
     *@dev Calculates the discount of fee according to user's stake volume and time period of the stake.
-    * Fee discount would be 90% maximum.
+    * Fee discount would be 100% maximum.
     */
     function calculateReward(address _addr) public view returns(uint256){
-      uint256 reward = ((stakePool[_addr].amount)/10000); // for now calculates %0.01 reward of stake
+      uint256 reward = (0); // for now calculates %0.01 reward of stake
       return reward;
     }
 
