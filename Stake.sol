@@ -4,7 +4,8 @@ pragma solidity >=0.8.0 <0.9.0;
 import "hardhat/console.sol";
 
 /**
-    REWARD SYSTEM SHOULD REDESIGN
+    REWARD SYSTEM : Can be discount fee from NFT trading/purchasing. For example, we can take %0.004 fee for each
+    NFT trade. When user stake, the fee discounted ~60-70% according to stake amount and stake duration.
  */
 
 
@@ -35,9 +36,8 @@ contract Stake {
     //Minimum stake duration is 1 Day, 24 Hours
 
     /*
-    *@dev Calculates the reward according to user's liquidity volume and time period of the stake.
-    * ( 0.0001 % of users balance * stake time value) / 100
-    * if 1 day value 1.1, if 7 value 9, if 30 value 35
+    *@dev Calculates the discount of fee according to user's stake volume and time period of the stake.
+    * Fee discount would be 90% maximum.
     */
     function calculateReward(address _addr) public view returns(uint256){
       uint256 reward = ((stakePool[_addr].amount)/10000); // for now calculates %0.01 reward of stake
